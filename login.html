@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Movie Ticket Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="homepage.html" class="nav-brand">MovieTime</a>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="index.html">Book Ticket</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+            <p>Welcome back!</p>
+        </div>
+        <form id="login-form">
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 90%; padding: 10px; margin-top: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required style="width: 90%; padding: 10px; margin-top: 5px;">
+            </div>
+            <button type="submit" class="submit">Login</button>
+        </form>
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="forgot-password.html" style="color: blue;">Forgot Password?</a>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="index.html" style="color: gray; text-decoration: none;">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
