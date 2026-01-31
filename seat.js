@@ -37,19 +37,4 @@ function updateSelectedCount(){
             document.querySelector('.total').innerHTML=selectedSeats.length*100;
     })
 }
-    document.querySelector(".submit").addEventListener("click",()=>{
-        const submit=document.querySelector(".submit");
-       submit.style.backgroundColor="green";
-       submit.style.color="white";
-       submit.style.border="none";
-       submit.style.borderRadius="5px";
-       submit.style.cursor="pointer";
-       submit.style.zIndex="100";
-       submit.style.position="fixed";
-       submit.style.top="50%";
-       submit.style.left="50%";
-       submit.style.transform="translate(-50%,-50%)";
-       submit.style.width="100%";
-       submit.style.height="100%";
-       submit.style.overflow="hidden";
-    });
+
