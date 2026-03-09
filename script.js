@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const seatsContainer = document.querySelector('.seats');
     if (seatsContainer) {
         const rows = 6;
-        const cols = 8;
+        const cols = 6;
         const seatPrice = 10;
         let selectedSeatsCount = 0;
         let totalPrice = 0;
