@@ -1,11 +1,3 @@
 {
-  "version": 2,
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/login", "dest": "/pages/login.html" },
-    { "src": "/booking", "dest": "/pages/booking.html" },
-    { "src": "/checkout", "dest": "/pages/checkout.html" },
-    { "src": "/forgot-password", "dest": "/pages/forgot-password.html" },
-    { "src": "/reset-password", "dest": "/pages/reset-password.html" }
-  ]
+  "version": 2
 }
