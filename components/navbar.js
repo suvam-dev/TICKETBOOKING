@@ -8,7 +8,7 @@ export default function navbar() {
         </button>
         <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
-            <a href="pages/login.html">Login</a>
+            <a href="pages/login.html">Login test</a>
         </div>`;
 
     const hamburger = document.getElementById('hamburger');
