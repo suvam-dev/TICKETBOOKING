@@ -7,8 +7,8 @@ export default function navbar() {
             <i class="fa fa-bars"></i>
         </button>
         <div class="nav-links" id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
+            <a href="pages/index.html">Home</a>
+            <a href="pages/login.html">Login</a>
         </div>`;
 
     const hamburger = document.getElementById('hamburger');
