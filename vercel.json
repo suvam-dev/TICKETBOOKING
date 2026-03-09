@@ -1,7 +1,7 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/", "dest": "/pages/index.html" },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/login", "dest": "/pages/login.html" },
     { "src": "/booking", "dest": "/pages/booking.html" },
     { "src": "/checkout", "dest": "/pages/checkout.html" },
