@@ -17,7 +17,7 @@ function generateMovieCards()
             <div class="movie-info">
                 <div class="movie-title">${movie.name}</div>
                 <p class="movie-desc">${movie.shortDescription}</p>
-                <a href="booking.html" class="book-btn">Book Tickets</a>
+                <a href="pages/booking.html" class="book-btn">Book Tickets</a>
             </div>
         `;
         moviesGrid.appendChild(movieCard);
