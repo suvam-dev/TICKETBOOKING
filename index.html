@@ -10,29 +10,49 @@
 </head>
 
 <body>
-    <div id="navbar">       
-    </div>
-     <div class="hero-banner">
-            <div class="hero-content">
-                <h1 class="hero-title">Experience the Magic of Cinema</h1>
-                <p class="hero-subtitle">Book tickets for the latest blockbusters from the comfort of your home.</p>
-                <a href="#movies" class="hero-btn">Explore Movies test</a>
-            </div>
+    <div id="loader-wrapper">
+    <video id="loader-video" autoplay muted playsinline>
+        <source src="space-loader.mp4" type="video/mp4">
+    </video>
+</div>
+    <main>
+        <div id="navbar">       
         </div>
+        <div class="hero-banner">
+                <div class="hero-content">
+                    <h1 class="hero-title">Experience the Magic of Cinema</h1>
+                    <p class="hero-subtitle">Book tickets for the latest blockbusters from the comfort of your home.</p>
+                    <a href="#movies" class="hero-btn">Explore Movies test</a>
+                </div>
+            </div>
 
-        <div class="movies-container" id="movies">
-            <h1 class="text-center">Now Showing</h1>
-            <div class="movies-grid">  </div>
-        </div>
-        <div class="detailed-view" id="detailed-view" >
-            <div class="detailed-content">
-                <h2 class="detailed-title"></h2>
-                <p class="detailed-desc"></p>
-                <a href="#" class="book-btn">Book Tickets</a>
+            <div class="movies-container" id="movies">
+                <h1 class="text-center">Now Showing</h1>
+                <div class="movies-grid">  </div>
             </div>
-        </div>
+            <div class="detailed-view" id="detailed-view" >
+                <div class="detailed-content">
+                    <h2 class="detailed-title"></h2>
+                    <p class="detailed-desc"></p>
+                    <a href="#" class="book-btn">Book Tickets</a>
+                </div>
+            </div>
     </main>
     <script src="/src/script.js" type="module"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('loader-wrapper');
+            const video = document.getElementById('loader-video');
+
+            const hideLoader = () => {
+                loader.classList.add('loader-hidden');
+                loader.addEventListener('transitionend', () => {
+                    loader.remove();
+                });
+            };
+            video.addEventListener('ended', hideLoader);
+        });
+        </script>
 </body>
 
 </html>
