@@ -55,6 +55,7 @@ body {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -369,7 +370,6 @@ hr {
     justify-content: center;
     text-align: center;
     padding: 0 2rem;
-    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -495,4 +495,34 @@ hr {
     opacity: 0;
     transform: scale(1.2); 
     pointer-events: none; 
+}
+
+.movies-container-bg ,body{
+    background-image: url(../bg.png);
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    margin:10;
+    display:flex;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+    background-color: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border-color);
+}
+.social-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}   
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+.social icons a:hover
+{
+    color: var(--primary-color);
 }
