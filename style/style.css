@@ -505,8 +505,6 @@ hr {
 footer{
     margin:10;
     display:flex;
-    position: absolute;
-    bottom:0;
     width:100%;
     justify-content:center;
     align-items:center;
