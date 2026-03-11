@@ -5,7 +5,7 @@ export default function navbar() {
     const url = new URL(urlString);
     const lastPart = url.pathname.split('/').pop();
     console.log("Current page:", lastPart);
-    if (lastPart === "index.html") {
+    if (lastPart !== "index.html") {
         container.innerHTML = `
         <a href="index.html" class="nav-brand">MovieTime</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -14,9 +14,9 @@ export default function navbar() {
         <div class="nav-links" id="nav-links">
             <input type="text" placeholder="Search movies..." class="search-input">
             <a href="index.html">Home</a>
-            <a href="./pages/contact.html">Contact</a>
-            <a href="./pages/about.html">About</a>
-            <a href="./pages/login.html">Login</a>       
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>       
         </div>`;
     } 
     else { 
@@ -28,9 +28,9 @@ export default function navbar() {
         <div class="nav-links" id="nav-links">
             <input type="text" placeholder="Search movies..." class="search-input">
             <a href="../index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="login.html">Login</a>       
+            <a href="./pages/contact.html">Contact</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/login.html">Login</a>       
         </div>`;
     }
 
